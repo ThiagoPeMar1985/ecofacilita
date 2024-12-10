@@ -40,8 +40,8 @@ h2{
 
 }
 img{
-    display: flex; /* Alterado para block */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    display: flex;
+    margin: 0 auto; 
     max-width: 90%;
     height: auto;
     border-radius: 8px;
@@ -52,12 +52,13 @@ img{
     display: none;
 }
 
-/* Classe para mostrar elementos */
+
 .visible {
-    display: block;  /* Faz o elemento ficar visível */
+    display: block; 
+    padding: 20px;
 }
 
-/* Adicionando um estilo básico para as seções */
+
 #calculadora, #buscarEnergia {
     margin-top: 20px;
 }

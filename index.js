@@ -93,3 +93,35 @@ function toggleevo1() {
 elemento4.addEventListener('click', () => {
    toggleevo1(); 
 });
+const elemento5 = document.getElementById('vantagens');
+function togglevantagens1() {
+    var vantagensdiv = document.getElementById('vantagens1');
+    
+    // Alterna entre 'hidden' e 'visible'
+    if (vantagensdiv.classList.contains('hidden')) {
+        vantagensdiv.classList.remove('hidden');
+        vantagensdiv.classList.add('visible');
+    } else {
+        vantagensdiv.classList.remove('visible');
+        vantagensdiv.classList.add('hidden');
+    }
+}
+elemento5.addEventListener('click', () => {
+   togglevantagens1(); 
+});
+const elemento6 = document.getElementById('quemsomos');
+function togglequemsomos1() {
+    var quemsomosdiv = document.getElementById('quemsomos1');
+    
+    // Alterna entre 'hidden' e 'visible'
+    if (quemsomosdiv.classList.contains('hidden')) {
+        quemsomosdiv.classList.remove('hidden');
+        quemsomosdiv.classList.add('visible');
+    } else {
+        quemsomosdiv.classList.remove('visible');
+        quemsomosdiv.classList.add('hidden');
+    }
+}
+elemento6.addEventListener('click', () => {
+   togglequemsomos1(); 
+});
