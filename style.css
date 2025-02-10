@@ -79,7 +79,7 @@ input {
 }
 .carrossel {
     position: relative;
-    max-width: 920px; /* Ajuste conforme necessário */
+    max-width: 920px; 
     margin: auto;
     overflow: hidden;
 }

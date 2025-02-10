@@ -65,7 +65,7 @@ const elemento3 = document.getElementById('video');
 function toggleVideo() {
     var videoDiv = document.getElementById('video1');
     
-    // Alterna entre 'hidden' e 'visible'
+    
     if (videoDiv.classList.contains('hidden')) {
         videoDiv.classList.remove('hidden');
         videoDiv.classList.add('visible');
@@ -82,7 +82,7 @@ const elemento4 = document.getElementById('evo');
 function toggleevo1() {
     var evodiv = document.getElementById('evo1');
     
-    // Alterna entre 'hidden' e 'visible'
+    
     if (evodiv.classList.contains('hidden')) {
         evodiv.classList.remove('hidden');
         evodiv.classList.add('visible');
@@ -98,7 +98,7 @@ const elemento5 = document.getElementById('vantagens');
 function togglevantagens1() {
     var vantagensdiv = document.getElementById('vantagens1');
     
-    // Alterna entre 'hidden' e 'visible'
+   
     if (vantagensdiv.classList.contains('hidden')) {
         vantagensdiv.classList.remove('hidden');
         vantagensdiv.classList.add('visible');
@@ -114,7 +114,7 @@ const elemento6 = document.getElementById('quemsomos');
 function togglequemsomos1() {
     var quemsomosdiv = document.getElementById('quemsomos1');
     
-    // Alterna entre 'hidden' e 'visible'
+    
     if (quemsomosdiv.classList.contains('hidden')) {
         quemsomosdiv.classList.remove('hidden');
         quemsomosdiv.classList.add('visible');
@@ -138,7 +138,7 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}    
     slides[slideIndex - 1].style.display = "block";  
-    setTimeout(showSlides, 3000); // Muda a imagem a cada 3 segundos
+    setTimeout(showSlides, 3000); 
 }
 
 function changeSlide(n) {
