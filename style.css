@@ -112,3 +112,17 @@ button.prev {
 button.next {
     right: 10px;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px; 
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2e8b57; 
+    color: white; 
+    width: 100%;
+}
