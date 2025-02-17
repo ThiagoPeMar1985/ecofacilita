@@ -6,11 +6,22 @@ function calcularValor() {
         alert("Por favor, insira um valor válido.");
         return;
     }
-    var resultado = parseFloat(valorConta) * 24.55;
+    var resultado =  parseFloat(valorConta) * 16.55 + 6000;
     
     document.getElementById('resultado').innerHTML = 'O valor a ser investido é: <strong>R$ ' + resultado.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '</strong>. <br> Este cálculo não é 100% preciso, analise os valores na sua região no botão * Onde Encontro * Abaixo.';
+   
+     var bancos = [
+        'Banco BV',
+        'Banco Santander',
+        'Banco Itaú',
+        'Banco do Nordeste',
+        'Banco Banpará',
+        'Banco BNDES'
+    ];
     
+    document.getElementById('resultado').innerHTML = 'O valor a ser investido é: <strong>R$ ' + resultado.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '</strong>. <br> Este cálculo não é 100% preciso, analise os valores na sua região no botão * Onde Encontro * Abaixo.<br><br>Bancos que financiam 100% a energia solar:<br>' + bancos.join('<br>') + '.';
 }
+
 function buscarEnergiaSolar() {
     var cidade = document.getElementById('cidade').value.trim();
 
